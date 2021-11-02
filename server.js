@@ -69,7 +69,6 @@ async function run() {
       res.json(Userspot)
     })
     // get user selected spots
-    // const {uid}=useAuth()
     app.get('/userSpot/:uid', async(req,res)=>{
       const uid = req.params.uid;
       const query = {uid:uid};
